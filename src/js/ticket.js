@@ -1,8 +1,8 @@
-class Ticket {
-  constructor() {
-    id,
-    name,
-    status,
-    created;
-  }
-}
+// class Ticket {
+//   constructor() {
+//     id,
+//     name,
+//     status,
+//     created;
+//   }
+// }
