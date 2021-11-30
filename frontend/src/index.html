@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <button type="button" class="btn addTicketButton">Добавить тикет</button>
+  <div id="tickets" class="tickets-container"></div>
+
+  <div class="modal addTicket">
+    <h3 class="modalHeader">Добавить тикет</h3>
+    <form class="addTicketForm">
+      <label>
+        Краткое описание
+        <input class="description" required>
+      </label>
+      <label>
+        Подробное описание
+        <input class="fullDescription">
+      </label>
+      <div class="modalButtons">
+        <button type="button" class="btn cancel">Отмена</button>
+        <button type="submit" class="btn">Оk</button>
+      </div>
+    </form>
+  </div>
+
+  <div class="modal editTicket">
+    <h3 class="modalHeader">Изменить тикет</h3>
+    <form class="editForm">
+      <label>
+        Краткое описание
+        <input class="description" required>
+      </label>
+      <label>
+        Подробное описание
+        <input class="fullDescription">
+      </label>
+      <div class="modalButtons">
+        <button type="button" class="btn cancel">Отмена</button>
+        <button type="submit" class="btn">Оk</button>
+      </div>
+    </form>
+  </div>
+
+  <div class="modal deleteTicket">
+    <h3 class="modalHeader">Удалить тикет</h3>
+    <div class="modalText">
+      Вы уверены, что хотите удалить тикет? Это действие необратимо.
+    </div>
+    <div class="modalButtons">
+      <button type="button" class="btn cancel">Отмена</button>
+      <button type="button" class="btn ok">Оk</button>
+    </div>
+  </div>
+  
+</body>
+</html>

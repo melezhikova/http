@@ -1,0 +1,114 @@
+body {
+  color: rgb(71, 70, 70);
+  padding: 30px;
+  position: relative;
+}
+
+.btn {
+  padding: 10px;
+  border: 1px solid rgb(71, 70, 70);
+  border-radius: 5px;
+  background-color: #ffffff;
+}
+
+.addTicketButton {
+  display: block;
+  margin-left: auto;
+  margin-right: 0;
+  margin-bottom: 15px;
+}
+
+.ticketDiv {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 20px;
+  padding: 7px;
+  border: 1px solid black;
+}
+
+.ticketDiv:nth-child(n + 2) {
+  border-top: none;
+}
+
+.ticketStatus, .ticketEdit, .ticketDel {
+  width: 25px;
+  height: 25px;
+  margin-right: 15px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.falseStatus {
+  background-image: url('../img/icons8-неотмеченный-круг-30.png');
+}
+
+.trueStatus {
+  background-image: url('../img/icons8-галочка-да-32.png');
+}
+
+.ticketName {
+  cursor: pointer;
+  margin-right: 15px;
+}
+
+.btnBox {
+  display: flex;
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.ticketDate{
+  margin-right: 30px;
+}
+
+.ticketEdit {
+  background-image: url('../img/icons8-карандаш-24.png');
+}
+
+.ticketDel {
+  background-image: url('../img/icons8-x-в-круге-50.png');
+}
+
+.details {
+  width: 100%;
+  margin: 20px 0 0 40px;
+}
+
+.modal {
+  visibility: hidden;
+  position: absolute;
+  width: 50%;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 20px;
+  left: 25%;
+  top: 25%;
+  z-index: 1;
+}
+
+.active {
+  visibility: visible;
+}
+
+.modalHeader {
+  font-weight: 100;
+  margin: 0 0 15px 0;
+  text-align: center;
+}
+
+.description, .fullDescription {
+  width: 100%;
+  padding: 7px;
+  margin: 10px 0;
+  box-sizing: border-box;
+}
+
+.modalButtons {
+  text-align: right;
+}
+
+.modalText {
+  margin-bottom: 30px;
+}
